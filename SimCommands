@@ -1,0 +1,7 @@
+
+
+   ***  help you to find all the links in JS files***
+              python linkfinder.py -i https://www.example.com/ -d -o cli | unfurl -u format %p?%q
+
+
+              
